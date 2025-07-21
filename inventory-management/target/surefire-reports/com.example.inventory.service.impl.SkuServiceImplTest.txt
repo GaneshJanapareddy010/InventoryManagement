@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.example.inventory.service.impl.SkuServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.063 s <<< FAILURE! - in com.example.inventory.service.impl.SkuServiceImplTest
+testAddSkuToProduct_InvalidPrice  Time elapsed: 0.046 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalArgumentException> but was: <com.example.inventory.exception.CustomValidationException>
+	at com.example.inventory.service.impl.SkuServiceImplTest.testAddSkuToProduct_InvalidPrice(SkuServiceImplTest.java:90)
+Caused by: com.example.inventory.exception.CustomValidationException: Price must be greater than 0
+	at com.example.inventory.service.impl.SkuServiceImplTest.lambda$testAddSkuToProduct_InvalidPrice$2(SkuServiceImplTest.java:90)
+	at com.example.inventory.service.impl.SkuServiceImplTest.testAddSkuToProduct_InvalidPrice(SkuServiceImplTest.java:90)
+
+testAddSkuToProduct_DuplicateCode  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalArgumentException> but was: <com.example.inventory.exception.CustomValidationException>
+	at com.example.inventory.service.impl.SkuServiceImplTest.testAddSkuToProduct_DuplicateCode(SkuServiceImplTest.java:80)
+Caused by: com.example.inventory.exception.CustomValidationException: SKU with this code already exists for the product
+	at com.example.inventory.service.impl.SkuServiceImplTest.lambda$testAddSkuToProduct_DuplicateCode$1(SkuServiceImplTest.java:80)
+	at com.example.inventory.service.impl.SkuServiceImplTest.testAddSkuToProduct_DuplicateCode(SkuServiceImplTest.java:80)
+
+testUpdateSku  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <199.99> but was: <null>
+	at com.example.inventory.service.impl.SkuServiceImplTest.testUpdateSku(SkuServiceImplTest.java:103)
+
+testAddSkuToProduct  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <99.99> but was: <null>
+	at com.example.inventory.service.impl.SkuServiceImplTest.testAddSkuToProduct(SkuServiceImplTest.java:59)
+

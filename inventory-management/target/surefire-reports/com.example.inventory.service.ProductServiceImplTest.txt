@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.inventory.service.ProductServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.example.inventory.service.ProductServiceImplTest
+com.example.inventory.service.ProductServiceImplTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: LProductServiceImpl;
+Caused by: java.lang.ClassNotFoundException: ProductServiceImpl
+
